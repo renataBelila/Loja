@@ -3,11 +3,11 @@ const nextConfig = {}
 
 module.exports = {
     images: {
-        remotePatters:[{
+        remotePatterns:[{
             protocol: "https",
-            hostname: "",
+            hostname: "prints.ultracoloringpages.com",
             port: "",
             pathname: "/**"
-        }]
+        }],
     },
 }

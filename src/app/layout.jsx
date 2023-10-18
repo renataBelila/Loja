@@ -1,5 +1,6 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
+import { Inter } from 'next/font/google';
+import './globals.css';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,6 +13,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <body className={inter.className}>
+      <header >
+    <nav>
+      <ul>
+        <li><Link href="/produtos/camisa">Camisas</Link></li>
+        <li><Link href="/produtos/tenis">tenis</Link></li>
+      </ul>
+    </nav>
+  </header>
         {children} {/*sempre crie a página que você quer e depois coloque o nome de page*/}
       </body>
     </html>
